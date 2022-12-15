@@ -16,7 +16,7 @@ export default class RecipeBookAPI extends React.Component {
     newRecipeIngredients: ""
   };
 
-  BASE_API_URL = "http://localhost:8888";
+  BASE_API_URL = "https://simple-menu-api.onrender.com";
 
   //part whereby API calls are placed here
   async componentDidMount(){
@@ -29,7 +29,7 @@ export default class RecipeBookAPI extends React.Component {
   }
 
   //function that remembers the visuals
-  //remember JSX rendering doesn't support if..else in the return
+  //remember JSX rendering doesn't support if..lese in the return
   //hence we place in a function here
   renderPage() {
     if (this.state.page === "list") {
